@@ -11,12 +11,13 @@ body {
 	
 }
 .contenedor{
-	max-width: 900px;
+	max-width: 100%;
 	margin: 0 auto;
 }
 
 .bloque.parallax{
 	height: 350px;
+	width: 100%;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	background-size: cover;
@@ -84,12 +85,13 @@ p{
 	height: 950px;
 	margin: auto;
 
+
 }
 
 /*gatos*/
 #imagen_ref1{
-	height: 500px;
-	width: 220px;
+	height: 380px;
+	width: 160px;
 	position: absolute;
 	margin-left: 10px;
 	background-image: url("../img/borde1.png");
@@ -98,8 +100,8 @@ p{
 	margin-top: 20px;
 }
 #imagen_ref2{
-	height: 500px;
-	width: 220px;
+	height: 380px;
+	width: 160px;
 	float: right;
 	margin-right: 10px;
 	background-image: url("../img/borde2.png");
@@ -143,9 +145,8 @@ textarea{
 }
 .contenedor_cat{
 	width: 900px;
-	margin-left: 300px;
-	
-
+	margin-left: 25%;
+	position: relative;
 }
 
 /*catalogos*/
@@ -192,7 +193,7 @@ textarea{
 	height: 250px;
 	width: 200px;
 	float: left;
-	margin: 30px;
+	margin: 20px;
 	text-align: center;
 	color: yellow;
 	text-shadow: 2px 2px black;
@@ -228,41 +229,28 @@ footer	{
 /*responsividad*/
 
 @media (max-width:1200px){
-    
-    /*gatos*/
-	#imagen_ref1{
-		height: 58px;
-		width: 20px;
-		position: absolute;
-		margin-left: 0px;
-		
-		}
-	#imagen_ref2{
-		height: 58px;
-		width: 20px;
-		position: absolute;
-        float: right;
-		margin-right: 0px;
-		margin-left: 750px;
-		}
-	
-	/*catalogo*/	
-	.contenedor_cat{
-		margin-top: 10px;
-		width: 100%;
-		margin-left: 10px;
-		}
-			
-	.bloque {
-		margin-bottom: 0px;
-		font-size: 16px;
-		height: 80px;
-		margin: auto;
-	
+	.bloque.parallax{
+		height: 200px;
+		width: 140%;
 	}
-	#img1,#img2,#img3,#img4,#img5,#img6,#img7,#img8,#img9
-	{
-		margin: 20px;	
+	nav{
+		width: 140%;
+	}
+	/*gatos*/
+	#imagen_ref1{
+		height: 38px;
+		width: 16px;
+		margin-left: auto;
+	}
+	#imagen_ref2{
+		height: 38px;
+		width: 16px;
+		margin-right: auto;
+		}
+	#img1,#img2,#img3,#img4,#img5,#img6,#img7,#img8,#img9{
+		margin: 15px;
+		width: 30%;
+	
 	}
 	#siguiente{
 		position: absolute;
@@ -273,76 +261,55 @@ footer	{
 		position: absolute;
 		margin-left: 0px;
 	}
-	
-    footer	{
-    
-    width: auto;
-    margin-top: relative;
-	margin-top: 850px;
-	}	
-
-	/*inicio*/
-
-	.contenedor{
-		max-width: 500px;
-		margin: 0 auto;
-	}
-}
-
-
-@media (max-width: 800px) {
-	.bloque h1{
-		font-size: 30px;
-	}
-	#imagen_ref2{
-		margin-left: 300px;
-		}
-
-
 	/*catalogo*/	
 	.contenedor_cat{
 		margin-top: 10px;
-		width: 80%;
-		margin-left: 20px;
-		display: block;
-		justify-content: center;
-
-
+		width: 800px;
+		margin-left: 20%;
 		}
-	.catalogofooter	{
-    
-		width: auto;
-		margin-top: relative;
-		margin-top: 3000PX;
-			}	
-}
-/*
-@media (max-width:1200px){
-    
-    .column {
-        flex-flow: wrap;
-    }
-    .row .column .image{
-        flex: 30%;
-    }
-    footer	{
-    margin-top: 1200px;
-    width: auto;
-    margin-top: relative;
-    background: transparent	;
-}
+	footer	{
+		margin-top: 700px;
+		background: wheat;
+		width: 140%;
+	}
+
+
 }
 
-@media (max-width: 1000px) {
-    .row .column .image{
-        flex: 50%;
-    }
+@media (max-width:700px){
+	footer	{
+		margin-top: 700px;
+		background: wheat;
+		width: 140%;
+	}
+	.contenedor_cat{
+		margin-top: 10px;
+		width: 75%;
+		margin-left: 20%;
+		}
+	#img1,#img2,#img3,#img4,#img5,#img6,#img7,#img8,#img9{
+		margin: 15px;
+		width: 50%;
+	
+	}
+	footer	{
+		margin-top: 1600px;
+		background: wheat;
+		width: 140%;
+	}
+	.bloque h1{
+		text-align: center;
+		font-size: 30px;
+		}	
+	
 
-@media (max-width: 800px) {
-    .row .column .image{
-        flex: 100%;
-    }
-    
 }
+
+@media (max-width:350px){
+	.bloque h1{
+		font-size: 20px;
+		}
+	.contenedor_cat{
+		margin-top: 10px;
+		}
 }
-*/
